@@ -1,0 +1,91 @@
+"*":
+  "atom-ide-ui":
+    hyperclick:
+      linuxTriggerKeys: "shiftKey,ctrlKey"
+  "atom-updater-linux":
+    packageType: "deb"
+  "autocomplete-plus": {}
+  core:
+    disabledPackages: [
+      "language-gfm"
+      "markdown-preview"
+      "symbol-gen"
+      "remote-edit"
+      "wrap-guide"
+      "markdown-preview-plus"
+      "hydrogen-launcher"
+      "Hydrogen"
+      "sorter"
+    ]
+    excludeVcsIgnoredPaths: false
+    telemetryConsent: "limited"
+    themes: [
+      "one-dork-ui"
+      "one-dork-syntax"
+    ]
+    useTreeSitterParsers: false
+  editor:
+    fontSize: 18
+    scrollPastEnd: true
+    softWrapAtPreferredLineLength: true
+    tabLength: 4
+    zoomFontWhenCtrlScrolling: false
+  "exception-reporting":
+    userId: "b19fa6c8-3276-467a-aec7-b01920971825"
+  "file-types":
+    "^Dockerfile.*$": "source.dockerfile"
+  fonts:
+    fontFamily: "DejaVu Mono"
+  "julia-client":
+    consoleOptions:
+      whitelistedKeybindingsREPL: [
+        "Ctrl-J"
+        "Ctrl-K"
+        "Ctrl-E"
+        "Ctrl-V"
+        "Ctrl-M"
+        "Ctrl-PageUp"
+        "Ctrl-PageDown"
+        "Ctrl+P"
+        "Ctrl+T"
+        "Alt+Up"
+      ]
+      whitelistedKeybindingsTerminal: [
+        "Ctrl-J"
+        "Ctrl-K"
+        "Ctrl-E"
+        "Ctrl-V"
+        "Ctrl-M"
+        "Ctrl-PageUp"
+        "Ctrl-PageDown"
+        "Ctrl+P"
+        "Ctrl+T"
+        "Alt+Up"
+      ]
+    firstBoot: false
+    juliaOptions:
+      numberOfThreads: "1"
+    uiOptions:
+      errorNotifications: false
+      usePlotPane: false
+  "markdown-preview-enhanced":
+    openPreviewPaneAutomatically: false
+  minimap:
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+      "split-diff": true
+      "split-diffDecorationsZIndex": 0
+  "tool-bar":
+    position: "Left"
+    visible: false
+  "tree-view":
+    squashDirectoryNames: true
+  "uber-juno":
+    disable: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    removeTrailingWhitespace: false
+  wordcount:
+    noextension: true
