@@ -136,6 +136,7 @@ export PYTHON="python3"
 
 export QUOTING_STYLE=literal
 
+export ATOM_REPOS_HOME=$HOME/src
 
 if [ -f ~/.bashrc.local ]; then
     . ~/.bashrc.local

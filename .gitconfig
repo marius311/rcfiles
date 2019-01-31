@@ -1,0 +1,26 @@
+[user]
+    email = mariusmillea@gmail.com
+    name = marius
+[push]
+    default = matching
+[alias]
+    st = status
+[credential]
+    helper = store
+[diff]
+    tool = meld
+[filter "lfs"]
+    clean = git-lfs clean %f
+    smudge = git-lfs smudge %f
+    required = true
+[alias]
+    lg = !"git log --branches --remotes --tags --graph --oneline --decorate"
+[url "https://"]
+    insteadOf = git://
+[core]
+    editor = vim
+    autocrlf = false
+[difftool]
+    prompt = false
+[mergetool]
+    prompt = false
