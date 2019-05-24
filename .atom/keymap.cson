@@ -18,10 +18,19 @@
   'ctrl-)': 'window:toggle-bottom-dock'
   'ctrl-b': 'latextools:build'
   'ctrl-j ctrl-t': 'julia-client:new-terminal'
+  'ctrl-w ctrl-h': 'weave:weave-to-html'
   'ctrl-shift-a': 'application:add-project-folder'
   'alt-up': 'window:focus-pane-above'
   'alt-down': 'window:focus-pane-below'
+  
+  
+'atom-text-editor[data-grammar="source julia"]':
+  'f10': 'julia-debug:step-to-next-line'
+  'shift-f10': 'julia-debug:step-to-next-expression'
+  'f11': 'julia-debug:step-into-function'
+  'shift-f11': 'julia-debug:finish-function'
 
+  
 # Your keymap
 #
 # Atom keymaps work similarly to style sheets. Just as style sheets use

@@ -127,9 +127,6 @@ fi
 
 export PATH=~/bin:~/.local/bin:$PATH
 
-alias python=python3
-alias pip=pip3
-
 export JULIA_NUM_THREADS=1
 export LD_LIBRARY_PATH=$HOME/lib
 export PYTHON="python3"
