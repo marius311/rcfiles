@@ -249,11 +249,11 @@
             "selector": "body"
         },
         {
-            "command": "editmenu:find",
+            "command": "documentsearch:start",
             "keys": [
-                "Ctrl F"
+                "Accel F"
             ],
-            "selector": "body",
+            "selector": ".jp-mod-searchable",
             "disabled": true
         }
     ]
