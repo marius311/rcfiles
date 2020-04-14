@@ -126,10 +126,14 @@ if [ -f ~/.alias_completion ]; then
 fi
 
 export PATH=~/bin:~/.local/bin:$PATH
-export LD_LIBRARY_PATH=$HOME/lib
+export LD_LIBRARY_PATH=$HOME/lib:$LD_LIBRARY_PATH
 
 export JULIA_NUM_THREADS=1
 export JULIA_FFTW_PROVIDER=MKL
+export JULIA_LOAD_PATH=@:@stdlib
+export JULIA_PROJECT=@.
+
+
 
 export PYTHON="python3"
 
