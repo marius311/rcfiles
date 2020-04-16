@@ -112,14 +112,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias ssh='ssh -Y'
-alias jn='jupyter notebook'
 alias jl='jupyter lab'
-alias jna='BROWSER=google-chrome-app jupyter notebook --NotebookApp.iopub_data_rate_limit=1.0e10'
-
 alias d='docker'
 alias dc='docker-compose'
 alias dm='docker-machine'
+alias j='julia'
+alias g='git'
 
 if [ -f ~/.alias_completion ]; then
 	. ~/.alias_completion
@@ -140,6 +138,9 @@ export PYTHON="python3"
 export QUOTING_STYLE=literal
 
 export ATOM_REPOS_HOME=$HOME/src
+
+export DOCKER_BUILDKIT=1
+export COMPOSE_DOCKER_CLI_BUILD=1
 
 if [ -f ~/.bashrc.local ]; then
     . ~/.bashrc.local

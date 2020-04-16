@@ -13,22 +13,27 @@
   'alt-{': 'cursor-history:prev-within-editor'
   'alt-z': 'editor:toggle-soft-wrap'
   'ctrl-*': 'window:toggle-left-dock'
+  'ctrl-(': 'window:toggle-right-dock'
   
 'atom-workspace':
   'ctrl-)': 'window:toggle-bottom-dock'
   'ctrl-b': 'latextools:build'
   'ctrl-j ctrl-t': 'julia-client:new-terminal'
   'ctrl-w ctrl-h': 'weave:weave-to-html'
+  'ctrl-w ctrl-p': 'weave:weave-to-pdf'
   'ctrl-shift-a': 'application:add-project-folder'
-  'alt-up': 'window:focus-pane-above'
-  'alt-down': 'window:focus-pane-below'
+  'ctrl-shift-up': 'window:focus-pane-above'
+  'ctrl-shift-down': 'window:focus-pane-below'
   
   
 'atom-text-editor[data-grammar="source julia"]':
   'f10': 'julia-debug:step-to-next-line'
   'shift-f10': 'julia-debug:step-to-next-expression'
-  'f11': 'julia-debug:step-into-function'
+  'f11': 'julia-debug:step-into'
   'shift-f11': 'julia-debug:finish-function'
+
+"atom-text-editor[data-grammar~=\"latex\"]":
+  "ctrl-b": "latex:build",
 
   
 # Your keymap
