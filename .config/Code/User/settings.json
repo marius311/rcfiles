@@ -1,0 +1,66 @@
+{
+    "window.zoomLevel": 1,
+    "julia.enableTelemetry": true,
+    "editor.fontFamily": "'DejaVu Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "editor.occurrencesHighlight": false,
+    "editor.renderLineHighlight": "none",
+    "julia.enableCrashReporter": true,
+    "editor.lightbulb.enabled": false,
+    "workbench.statusBar.visible": true,
+    "julia.lint.missingrefs": "none",
+    "julia.lint.modname": false,
+    "julia.lint.pirates": false,
+    "julia.lint.constif": false,
+    "julia.lint.iter": false,
+    "julia.lint.lazy": false,
+    "julia.lint.typeparam": false,
+    "editor.hover.enabled": false,
+    "diffEditor.renderSideBySide": true,
+    "python.dataScience.sendSelectionToInteractiveWindow": false,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "python.formatting.provider": "yapf",
+    "workbench.colorTheme": "Horizon",
+    "editor.tokenColorCustomizations": {
+        "[Horizon]": {
+          "textMateRules": [
+            {
+              "scope": "string.docstring.julia",
+              "settings": {
+                "foreground": "#DEA387"
+              }
+            }
+          ]
+        }
+    },
+    "workbench.colorCustomizations": {
+      "editor.selectionBackground": "#2E303EFF",
+      "editor.selectionHighlightBackground": "#2E303EA3",
+    },
+    "julia.lint.datadecl": false,
+    "julia.lint.useoffuncargs": false,
+    "git.confirmSync": false,
+    "gitlens.views.repositories.files.layout": "tree",
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.blame.highlight.enabled": false,
+    "gitlens.currentLine.scrollable": false,
+    "gitlens.hovers.annotations.changes": false,
+    "gitlens.hovers.annotations.details": false,
+    "gitlens.hovers.annotations.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.statusBar.enabled": false,
+    "gitlens.hovers.enabled": false,
+    "gitlens.views.search.enabled": false,
+    "gitlens.views.lineHistory.enabled": false,
+    "problems.decorations.enabled": false,
+    "explorer.decorations.badges": true, 
+    "explorer.decorations.colors": true,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "julia.lint.call": false,
+    "julia.lint.nothingcomp": false,
+}

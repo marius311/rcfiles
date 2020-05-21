@@ -14,7 +14,9 @@
   'alt-z': 'editor:toggle-soft-wrap'
   'ctrl-*': 'window:toggle-left-dock'
   'ctrl-(': 'window:toggle-right-dock'
-  
+  'alt-shift-right': 'expand-region:expand'
+  'alt-shift-left': 'expand-region:shrink'
+
 'atom-workspace':
   'ctrl-)': 'window:toggle-bottom-dock'
   'ctrl-b': 'latextools:build'
