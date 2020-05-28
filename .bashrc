@@ -116,8 +116,14 @@ alias jl='jupyter lab'
 alias d='docker'
 alias dc='docker-compose'
 alias dm='docker-machine'
-alias j='julia'
 alias g='git'
+
+if [ -f ~/lib/custom_julia_sysimage.so ]; then
+    alias j="julia -J$(readlink -f ~/lib/custom_julia_sysimage.so)"
+else
+    alias j="julia"
+fi
+
 
 if [ -f ~/.alias_completion ]; then
 	. ~/.alias_completion
