@@ -65,7 +65,7 @@
     useTreeSitterParsers: false
   editor:
     confirmCheckoutHeadRevision: false
-    fontFamily: "DejaVu Sans Mono"
+    fontFamily: "Iosevka Extended, Fira Code, DejaVu Sans Mono"
     fontSize: 16
     scrollPastEnd: true
     softWrapAtPreferredLineLength: true
@@ -122,11 +122,12 @@
     currentVersion: "0.12.5"
     firstBoot: false
     juliaOptions:
-      bootMode: "Basic"
+      bootMode: "Cycler"
       deprecationWarnings: false
       numberOfThreads: "1"
       startupArguments: [
         "--startup-file=no"
+        "--project=@."
       ]
     juliaPath: "/home/marius/src/julia-1.4/julia"
     remoteOptions:

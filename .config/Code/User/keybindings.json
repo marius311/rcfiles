@@ -183,4 +183,8 @@
         "key": "ctrl+r",
         "command": "-workbench.action.openRecent"
     },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.terminal.focusNext"
+    },
 ]
