@@ -113,6 +113,7 @@ if ! shopt -oq posix; then
 fi
 
 alias jl='jupyter lab'
+alias pl='julia -e "using Pluto; Pluto.run()"'
 alias d='docker'
 alias dc='docker-compose'
 alias dm='docker-machine'
