@@ -38,36 +38,6 @@
         "when": "editorLangId == 'markdown'"
     },
     {
-        "key": "ctrl+enter",
-        "command": "language-julia.executeJuliaCodeInREPL",
-        "when": "editorTextFocus && editorLangId == 'julia'"
-    },
-    {
-        "key": "ctrl+enter",
-        "command": "-language-julia.executeJuliaCodeInREPL",
-        "when": "editorTextFocus && editorLangId == 'julia'"
-    },
-    {
-        "key": "ctrl+enter",
-        "command": "-language-julia.executeJuliaCodeInREPL",
-        "when": "editorTextFocus && editorLangId == 'juliamarkdown'"
-    },
-    {
-        "key": "shift+alt+enter",
-        "command": "language-julia.executeJuliaCellInREPL",
-        "when": "editorTextFocus && editorLangId == 'julia'"
-    },
-    {
-        "key": "shift+enter",
-        "command": "-language-julia.executeJuliaCellInREPL",
-        "when": "editorTextFocus && editorLangId == 'julia'"
-    },
-    {
-        "key": "alt+enter",
-        "command": "-language-julia.executeJuliaBlockInREPL",
-        "when": "editorTextFocus && editorLangId == 'julia'"
-    },
-    {
         "key": "ctrl+shift+l",
         "command": "workbench.action.editor.changeLanguageMode"
     },
@@ -104,11 +74,6 @@
         "key": "alt+down",
         "command": "-editor.action.moveLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "shift+enter",
-        "command": "language-julia.executeJuliaBlockInREPL",
-        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+shift+up",
@@ -186,5 +151,72 @@
     {
         "key": "ctrl+tab",
         "command": "workbench.action.terminal.focusNext"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "deleteAllRight",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "language-julia.executeCodeBlockOrSelection",
+        "when": "editorTextFocus && editorLangId == 'julia'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "language-julia.executeCodeBlockOrSelectionAndMove",
+        "when": "editorTextFocus && editorLangId == 'julia'"
+    },
+    {
+        "key": "alt+enter",
+        "command": "language-julia.executeCell",
+        "when": "editorTextFocus && editorLangId == 'julia'"
+    },
+    {
+        "key": "shift+alt+enter",
+        "command": "language-julia.executeCellAndMove",
+        "when": "editorTextFocus && editorLangId == 'julia'"
+    },
+    {
+        "key": "ctrl+alt+enter",
+        "command": "language-julia.executeJuliaCodeInREPL",
+        "when": "editorTextFocus && editorLangId == 'julia'"
+    },
+    {
+        "key": "ctrl+shift+backspace",
+        "command": "language-julia.clearAllInlineResultsInEditor",
+        "when": "editorTextFocus && editorLangId == 'julia'"
+    },
+    {
+        "key": "ctrl+i ctrl+c",
+        "command": "-language-julia.clearAllInlineResultsInEditor",
+        "when": "editorTextFocus && editorLangId == 'julia'"
+    },
+    {
+        "key": "ctrl+j ctrl+m",
+        "command": "language-julia.chooseModule",
+        "when": "editorTextFocus && editorLangId == 'julia'"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "workbench.view.explorer"
+    },
+    {
+        "key": "ctrl+2",
+        "command": "workbench.view.search"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "workbench.scm.focus"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "python.execSelectionInTerminal",
+        "when": "editorTextFocus && !findInputFocussed && !python.datascience.ownsSelection && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-python.execSelectionInTerminal",
+        "when": "editorTextFocus && !findInputFocussed && !python.datascience.ownsSelection && !replaceInputFocussed && editorLangId == 'python'"
     },
 ]
