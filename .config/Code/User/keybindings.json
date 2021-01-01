@@ -1,4 +1,3 @@
-// Place your key bindings in this file to override the defaultsauto[]
 [
     {
         "key": "ctrl+d",
@@ -219,4 +218,9 @@
         "command": "-python.execSelectionInTerminal",
         "when": "editorTextFocus && !findInputFocussed && !python.datascience.ownsSelection && !replaceInputFocussed && editorLangId == 'python'"
     },
+    {
+        "key": "ctrl+shift+c",
+        "command": "language-julia.interrupt",
+        "when": "isJuliaEvaluating && editorLangId == 'julia'"
+    }
 ]

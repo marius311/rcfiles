@@ -1,13 +1,12 @@
 {
-    "window.zoomLevel": 1,
-    "editor.fontFamily": "'Iosevka Extended', 'Fira Code','SF Mono','DejaVu Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "window.zoomLevel": 0,
+    "editor.fontFamily": "'JuliaMono','Iosevka Extended', 'Fira Code','SF Mono','DejaVu Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "terminal.integrated.shell.linux": "/bin/bash",
     "editor.occurrencesHighlight": false,
     "editor.renderLineHighlight": "none",
     "editor.lightbulb.enabled": false,
     "workbench.statusBar.visible": true,
     "diffEditor.renderSideBySide": true,
-    "python.dataScience.sendSelectionToInteractiveWindow": false,
     "[python]": {
         "editor.defaultFormatter": "ms-python.python"
     },
@@ -34,7 +33,7 @@
     "explorer.decorations.colors": true,
     "latex-workshop.view.pdf.viewer": "tab",
     "git.ignoreLegacyWarning": true,
-    "editor.fontLigatures": false,
+    "editor.fontLigatures": true,
     "julia.enableTelemetry": true,
     "julia.enableCrashReporter": true,
     "julia.lint.run": false,
@@ -48,8 +47,6 @@
     "julia.executablePath": "/home/marius/src/julia-1.5/usr/bin/julia",
     "explorer.confirmDelete": false,
     "diffEditor.ignoreTrimWhitespace": false,
-    "python.dataScience.alwaysTrustNotebooks": true,
-    "workbench.colorTheme": "Horizon",
     "rst.preview.pythonPath": "/home/marius/miniconda3/bin/python",
     "python.pythonPath": "/home/marius/miniconda3/bin/python",
     "julia.useCustomSysimage": true,
@@ -68,7 +65,40 @@
     "python.showStartPage": false,
     "codespaces.accountProvider": "Microsoft",
     "latex-workshop.view.outline.labels.enabled": false,
-    "latex-workshop.latex.autoBuild.run": "never",
+    "terminal.integrated.commandsToSkipShell": [
+      "language-julia.interrupt"
+    ],
+    "extensions.ignoreRecommendations": true,
+    "jupyter.sendSelectionToInteractiveWindow": false,
+    "jupyter.alwaysTrustNotebooks": true,
+    "jupyter.askForKernelRestart": false,
+    "notebook.kernelProviderAssociations": [
+      {
+        "viewType": "jupyter-notebook",
+        "kernelProvider": "ms-toolsai.jupyter"
+      }
+    ],
+    "stableSort.preferWordSorting": true,
+    "settingsSync.ignoredSettings": [
+      "-jupyter.alwaysTrustNotebooks"
+    ],
+    "editor.minimap.enabled": true,
+    "jupyter.insidersChannel": "off",
+    "workbench.colorTheme": "Horizon",
+    "workbench.editorAssociations": [
+      {
+        "viewType": "jupyter-notebook",
+        "filenamePattern": "*.ipynb"
+      },
+      {
+        "viewType": "jupyter.notebook.ipynb",
+        "filenamePattern": "*.ipynb"
+      }
+    ],
+    "terminal.integrated.inheritEnv": false,
+    "git.autofetch": true,
+    "update.mode": "manual",
+    "latex-workshop.message.update.show": false,
   //   "latex-workshop.latex.tools": [{
   //     "name": "latexmk",
   //     "command": "latexmk",
