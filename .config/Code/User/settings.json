@@ -1,113 +1,143 @@
 {
-    "window.zoomLevel": 0,
-    "editor.fontFamily": "'JuliaMono','Iosevka Extended', 'Fira Code','SF Mono','DejaVu Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "terminal.integrated.shell.linux": "/bin/bash",
-    "editor.occurrencesHighlight": false,
-    "editor.renderLineHighlight": "none",
-    "editor.lightbulb.enabled": false,
-    "workbench.statusBar.visible": true,
-    "diffEditor.renderSideBySide": true,
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.python"
-    },
-    "python.formatting.provider": "yapf",
-    "editor.tokenColorCustomizations": {
-        "[Horizon]": {
-          "textMateRules": [
-            {
-              "scope": "string.docstring.julia",
-              "settings": {
-                "foreground": "#DEA387"
-              }
-            }
-          ]
+  "editor.fontFamily": "'JuliaMono','Iosevka Extended', 'Fira Code','SF Mono','DejaVu Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "terminal.integrated.shell.linux": "/bin/bash",
+  "editor.occurrencesHighlight": false,
+  "editor.renderLineHighlight": "none",
+  "editor.lightbulb.enabled": false,
+  "diffEditor.renderSideBySide": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+  },
+  "python.formatting.provider": "yapf",
+  "editor.tokenColorCustomizations": {
+    "[Horizon]": {
+      "textMateRules": [
+        {
+          "scope": "string.docstring.julia",
+          "settings": {
+            "foreground": "#DEA387"
+          }
         }
-    },
-    "workbench.colorCustomizations": {
-      "editor.selectionBackground": "#2E303EFF",
+      ]
+    }
+  },
+  "workbench.colorCustomizations": {
+    "[Horizon]": {
+      "notebook.cellBorderColor": "#2E303EFF",
+      "notebook.selectedCellBorder": "#2E303EFF",
+      "notebook.focusedCellBorder": "#E95378AA",
+      "notebook.focusedEditorBorder": "#E95378AA",
+      "editor.selectionBackground": "#2e303e",
       "editor.selectionHighlightBackground": "#2E303EA3",
-    },
-    "git.confirmSync": false,
-    "problems.decorations.enabled": false,
-    "explorer.decorations.badges": true, 
-    "explorer.decorations.colors": true,
-    "latex-workshop.view.pdf.viewer": "tab",
-    "git.ignoreLegacyWarning": true,
-    "editor.fontLigatures": true,
-    "julia.enableTelemetry": true,
-    "julia.enableCrashReporter": true,
-    "julia.lint.run": false,
-    "workbench.iconTheme": "seti",
-    "editor.minimap.showSlider": "always",
-    "editor.scrollbar.verticalScrollbarSize": 0,
-    "explorer.confirmDragAndDrop": false,
-    "workbench.startupEditor": "none",
-    "julia.execution.resultType": "inline",
-    "editor.multiCursorModifier": "ctrlCmd",
-    "julia.executablePath": "/home/marius/src/julia-1.5/usr/bin/julia",
-    "explorer.confirmDelete": false,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "rst.preview.pythonPath": "/home/marius/miniconda3/bin/python",
-    "python.pythonPath": "/home/marius/miniconda3/bin/python",
-    "julia.useCustomSysimage": true,
-    "julia.NumThreads": 4,
-    "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
-    "extensions.autoUpdate": true,
-    "remote.SSH.logLevel": "trace",
-    "python.terminal.activateEnvironment": false,
-    "editor.wordWrapColumn": 70,
-    "[markdown]": {
-        "editor.wordWrap": "wordWrapColumn",
-    },
-    "[latex]": {
-        "editor.wordWrap": "wordWrapColumn",
-    },
-    "python.showStartPage": false,
-    "codespaces.accountProvider": "Microsoft",
-    "latex-workshop.view.outline.labels.enabled": false,
-    "terminal.integrated.commandsToSkipShell": [
-      "language-julia.interrupt"
-    ],
-    "extensions.ignoreRecommendations": true,
-    "jupyter.sendSelectionToInteractiveWindow": false,
-    "jupyter.alwaysTrustNotebooks": true,
-    "jupyter.askForKernelRestart": false,
-    "notebook.kernelProviderAssociations": [
-      {
-        "viewType": "jupyter-notebook",
-        "kernelProvider": "ms-toolsai.jupyter"
-      }
-    ],
-    "stableSort.preferWordSorting": true,
-    "settingsSync.ignoredSettings": [
-      "-jupyter.alwaysTrustNotebooks"
-    ],
-    "editor.minimap.enabled": true,
-    "jupyter.insidersChannel": "off",
-    "workbench.colorTheme": "Horizon",
-    "workbench.editorAssociations": [
-      {
-        "viewType": "jupyter-notebook",
-        "filenamePattern": "*.ipynb"
-      },
-      {
-        "viewType": "jupyter.notebook.ipynb",
-        "filenamePattern": "*.ipynb"
-      }
-    ],
-    "terminal.integrated.inheritEnv": false,
-    "git.autofetch": true,
-    "update.mode": "manual",
-    "latex-workshop.message.update.show": false,
-  //   "latex-workshop.latex.tools": [{
-  //     "name": "latexmk",
-  //     "command": "latexmk",
-  //     "args": [
-  //         "-xelatex",
-  //         "-synctex=1",
-  //         "-interaction=nonstopmode",
-  //         "-file-line-error",
-  //         "%DOC%"
-  //     ]
-  // }],
+    }
+  },
+  "git.confirmSync": false,
+  "problems.decorations.enabled": false,
+  "explorer.decorations.badges": true,
+  "explorer.decorations.colors": true,
+  "latex-workshop.view.pdf.viewer": "tab",
+  "git.ignoreLegacyWarning": true,
+  "editor.fontLigatures": true,
+  "julia.enableTelemetry": true,
+  "julia.enableCrashReporter": true,
+  "editor.minimap.showSlider": "always",
+  "editor.scrollbar.verticalScrollbarSize": 0,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.startupEditor": "none",
+  "julia.execution.resultType": "inline",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "explorer.confirmDelete": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "julia.useCustomSysimage": true,
+  "julia.NumThreads": 1,
+  "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
+  "extensions.autoUpdate": true,
+  "remote.SSH.logLevel": "trace",
+  "python.terminal.activateEnvironment": false,
+  "editor.wordWrapColumn": 70,
+  "[markdown]": {
+    "editor.wordWrap": "wordWrapColumn",
+  },
+  "[latex]": {
+    "editor.wordWrap": "wordWrapColumn",
+  },
+  "latex-workshop.view.outline.labels.enabled": false,
+  "terminal.integrated.commandsToSkipShell": [
+    "language-julia.interrupt"
+  ],
+  "extensions.ignoreRecommendations": true,
+  "jupyter.askForKernelRestart": false,
+  "stableSort.preferWordSorting": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "terminal.integrated.inheritEnv": false,
+  "git.autofetch": true,
+  "update.mode": "manual",
+  "julia.symbolCacheDownload": true,
+  "workbench.editor.untitled.hint": "hidden",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "right"
+  },
+  "notebook.insertToolbarLocation": "notebookToolbar",
+  "explorer.autoReveal": false,
+  "cSpell.userWords": [
+    "bandpower",
+    "bandpowers",
+    "Delensing",
+    "frequentist",
+    "Gaussianity",
+    "symplectic"
+  ],
+  "workbench.iconTheme": "seti",
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "cSpell.enableFiletypes": [
+    "!python",
+    "latex"
+  ],
+  "jupyter.jupyterServerType": "remote",
+  "notebook.diff.ignoreMetadata": true,
+  "julia.additionalArgs": [
+    "--threads=1",
+    "--depwarn=yes",
+    // "--startup-file=no"
+  ],
+  "julia.runtimeCompletions": true,
+  "redhat.telemetry.enabled": true,
+  "editor.inlineSuggest.enabled": true,
+  "notebook.consolidatedRunButton": true,
+  "notebook.globalToolbarShowLabel": "never",
+  "notebook.outline.showCodeCells": true,
+  "jupyter.generateSVGPlots": true,
+  "remote.SSH.useFlock": false,
+  "scm.defaultViewMode": "tree",
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false,
+    "latex": false,
+    "python": true,
+    "julia": true,
+    "ignore": false
+  },
+  "notebook.output.textLineLimit": 5000,
+  "julia.executablePath": "/home/marius/.juliaup/bin/julia",
+  "julia.persistentSession.warnOnKill": false,
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "editor.stickyScroll.enabled": true,
+  "codesnap.containerPadding": "2em",
+  "jupyter.enableExtendedKernelCompletions": true,
+  "notebook.lineNumbers": "on",
+  "cSpell.enabled": false,
+  "workbench.colorTheme": "Horizon",
+  "julia.lint.disabledDirs": [
+    "docs",
+    "dev",
+    "test"
+  ],
+  "julia.lint.run": false,
+  "notebook.diff.ignoreOutputs": true,
+  "jupyter.interactiveWindow.textEditor.executeSelection": false,
 }

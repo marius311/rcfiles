@@ -118,12 +118,8 @@ alias d='docker'
 alias dc='docker-compose'
 alias dm='docker-machine'
 alias g='git'
-
-if [ -f ~/lib/custom_julia_sysimage.so ]; then
-    alias j="julia -J$(readlink -f ~/lib/custom_julia_sysimage.so)"
-else
-    alias j="julia"
-fi
+alias j="julia"
+alias ju="juliaup"
 
 
 if [ -f ~/.alias_completion ]; then
@@ -133,13 +129,11 @@ fi
 export PATH=~/bin:~/.local/bin:$PATH
 export LD_LIBRARY_PATH=$HOME/lib:$LD_LIBRARY_PATH
 
-export JULIA_NUM_THREADS=1
-export JULIA_FFTW_PROVIDER=MKL
+export JULIA_NUM_THREADS=auto
 export JULIA_PROJECT=@.
 
 
 
-export PYTHON="python3"
 
 export QUOTING_STYLE=literal
 

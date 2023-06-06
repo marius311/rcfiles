@@ -37,3 +37,7 @@
     cmd = git-nbmergetool merge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
 [status]
 	submodulesummary = 1
+[init]
+	defaultBranch = main
+[commit]
+	template = /home/marius/.gitmessage

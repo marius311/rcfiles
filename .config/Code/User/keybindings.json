@@ -208,11 +208,11 @@
         "key": "ctrl+3",
         "command": "workbench.scm.focus"
     },
-    {
-        "key": "ctrl+enter",
-        "command": "python.execSelectionInTerminal",
-        "when": "editorTextFocus && !findInputFocussed && !python.datascience.ownsSelection && !replaceInputFocussed && editorLangId == 'python'"
-    },
+    // {
+    //     "key": "ctrl+enter",
+    //     "command": "python.execSelectionInTerminal",
+    //     "when": "editorTextFocus && !findInputFocussed && !python.datascience.ownsSelection && !replaceInputFocussed && editorLangId == 'python'"
+    // },
     {
         "key": "shift+enter",
         "command": "-python.execSelectionInTerminal",
@@ -222,5 +222,28 @@
         "key": "ctrl+shift+c",
         "command": "language-julia.interrupt",
         "when": "isJuliaEvaluating && editorLangId == 'julia'"
-    }
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "notebook.cell.execute",
+        "when": "notebookCellListFocused && notebookCellType == 'code' && notebookCellExecutionState == 'failed' || notebookCellExecutionState == 'idle' || notebookCellExecutionState == 'succeeded' && notebookKernelCount > 0"
+    },
+    {
+        "key": "shift+enter",
+        "command": "notebook.cell.executeAndSelectBelow",
+        "when": "notebookCellListFocused && notebookCellType == 'code' && notebookCellExecutionState == 'failed' || notebookCellExecutionState == 'idle' || notebookCellExecutionState == 'succeeded' && notebookKernelCount > 0"
+    },
+
+    // prevent unicode-math-vscode from stealing Tab from Copilot
+    // {
+    //     "command": "-unicode-math-vscode.commit_tab",
+    //     "key": "tab",
+    //     "when": "editorTextFocus && !suggestWidgetVisible && !editorTabMovesFocus && !inSnippetMode && !hasSnippetCompletions && !editorTabMovesFocus && !editorReadonly"
+    // },
+    // {
+    //     "command": "unicode-math-vscode.commit_tab",
+    //     "key": "tab",
+    //     "when": "editorTextFocus && !inlineSuggestionVisible && !suggestWidgetVisible && !editorTabMovesFocus && !inSnippetMode && !hasSnippetCompletions && !editorTabMovesFocus && !editorReadonly"
+    // },
+
 ]
