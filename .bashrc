@@ -8,6 +8,11 @@ case $- in
       *) return;;
 esac
 
+# Ghostty shell integration for Bash. This should be at the top of your bashrc!
+if [ -n "${GHOSTTY_RESOURCES_DIR}" ]; then
+    builtin source "${GHOSTTY_RESOURCES_DIR}/shell-integration/bash/ghostty.bash"
+fi
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -57,9 +62,9 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='\n${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\n❯ '
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1='\n${debian_chroot:+($debian_chroot)}\u@\h:\w\n❯ '
 fi
 
 # If this is an xterm set the title to user@host:dir
@@ -72,8 +77,8 @@ xterm*|rxvt*)
 esac
 
 # enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+if [ "$color_prompt" = yes ]; then
+    # test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
@@ -132,15 +137,26 @@ export LD_LIBRARY_PATH=$HOME/lib:$LD_LIBRARY_PATH
 export JULIA_NUM_THREADS=auto
 export JULIA_PROJECT=@.
 
-
-
-
 export QUOTING_STYLE=literal
 
 export ATOM_REPOS_HOME=$HOME/src
 
 export DOCKER_BUILDKIT=1
 export COMPOSE_DOCKER_CLI_BUILD=1
+
+export NOMAD_ADDR=http://nomad.service.consul:4646/
+export NOMAD_TOKEN=e50c9c6a-47f0-64e8-a3d5-ec0ab4b9dbde
+
+# Set up fzf key bindings and fuzzy completion
+eval "$(fzf --bash)"
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
+if type __git_complete &>/dev/null; then
+  __git_complete g __git_main
+fi
 
 if [ -f ~/.bashrc.local ]; then
     . ~/.bashrc.local
