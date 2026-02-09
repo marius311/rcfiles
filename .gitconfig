@@ -1,6 +1,6 @@
 [user]
     email = mariusmillea@gmail.com
-    name = marius
+	name = Marius Millea
 [push]
     default = matching
 [alias]
@@ -12,16 +12,17 @@
 [diff]
     tool = meld
 [filter "lfs"]
-    clean = git-lfs clean -- %f
-    smudge = git-lfs smudge -- %f
-    required = true
-    process = git-lfs filter-process
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
+	process = git-lfs filter-process
 [alias]
 [url "https://"]
     insteadOf = git://
 [core]
     editor = vim
     autocrlf = false
+	excludesFile = /Users/marius/.gitignore
 [difftool]
     prompt = false
 [mergetool]
