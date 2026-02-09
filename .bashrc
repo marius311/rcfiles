@@ -97,6 +97,7 @@ alias l='ls -CF'
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -125,7 +126,10 @@ alias dm='docker-machine'
 alias g='git'
 alias j="julia"
 alias ju="juliaup"
-
+alias c="claude"
+alias vim=nvim
+alias vi=nvim
+alias y=yazi
 
 if [ -f ~/.alias_completion ]; then
 	. ~/.alias_completion
@@ -145,8 +149,8 @@ export DOCKER_BUILDKIT=1
 export COMPOSE_DOCKER_CLI_BUILD=1
 
 
-# Set up fzf key bindings and fuzzy completion
 eval "$(fzf --bash)"
+eval "$(zoxide init bash)"
 
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
