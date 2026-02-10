@@ -151,6 +151,8 @@ export COMPOSE_DOCKER_CLI_BUILD=1
 export NOMAD_ADDR=http://nomad.service.consul:4646/
 export NOMAD_TOKEN=e50c9c6a-47f0-64e8-a3d5-ec0ab4b9dbde
 
+export EDITOR=nvim
+
 eval "$(fzf --bash)"
 eval "$(zoxide init bash)"
 
