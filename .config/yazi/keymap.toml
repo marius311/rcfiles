@@ -7,7 +7,7 @@ prepend_keymap = [
 	{ on = "<C-Down>",  run = "arrow 99999999",  desc = "Go to bottom" },
 	{ on = "<C-f>",         run = "plugin jump-to-char", desc = "Jump to char" },
 	{ on = "<Enter>",   run = "plugin smart-enter", desc = "Open file or enter directory" },
-	{ on = "f",     run = "filter --smart",     desc = "Filter files" },
+	{ on = "/",     run = "filter --smart",     desc = "Filter files" },
 	{ on = "<A-Up>",    run = "seek -5",  desc = "Scroll preview up" },
 	{ on = "<A-Down>",  run = "seek 5",   desc = "Scroll preview down" },
 	{ on = "q",         run = "quit",     desc = "Quit and cd to current directory" },
