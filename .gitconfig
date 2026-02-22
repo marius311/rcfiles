@@ -22,7 +22,8 @@
 [core]
     editor = vim
     autocrlf = false
-	excludesFile = /Users/marius/.gitignore
+	excludesFile = ~/.gitignore
+	filemode = false
 [difftool]
     prompt = false
 [mergetool]
@@ -41,4 +42,8 @@
 [init]
 	defaultBranch = main
 [commit]
-	template = /home/marius/.gitmessage
+	template = ~/.gitmessage
+[safe]
+	directory = /mnt/nfs/nomad/dev/marius/scratch/1116-1117-1124-dvc
+	directory = /mnt/nfs/nomad/dev/marius/genie/1116-1117-1124-dvc
+	directory = /mnt/nfs/nomad/dev/marius/genie/no-pins
